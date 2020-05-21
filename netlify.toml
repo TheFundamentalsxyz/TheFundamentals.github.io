@@ -1,0 +1,27 @@
+[[plugins]]
+package = "netlify-plugin-rss"
+  [plugins.inputs]
+  # required configs, customize as needed
+  dirToScan = "/posts" # a subfolder to scan. "/" to scan all
+  authorName = "Arav narula"
+  site_url = "https://TheFundamentals.xyz"
+  title = "The TheFundamentals "
+  rssDescription = "Offical RSS feed for The TheFundamentals
+  categories = ['Technology', 'JAMstack', 'Web Development']
+  ttl = "10" # aka refresh every hour
+
+
+   copyright = "2020 ${Arav narula}"
+   language = "en"
+   pubDate = "new Date().toUTCString(),"
+ 
+
+  # # cheerio selectors for extractMetadataFromFile
+  # # defaults shown
+  # contentSelector = "main"
+  # publishDateSelector = # if not specified, we use the date of file creation
+  # descriptionSelector = "meta[name=description]" # probably no need to change
+  # titleSelector = "title" # probably no need to change
+
+  # # developer configs
+  # debugMode = false # (for development) turn true for extra diagnostic logging
